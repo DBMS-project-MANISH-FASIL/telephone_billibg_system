@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="754.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dbms_project.telephone_bill.UcomplaintController">
+     <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+    <left>
+      <VBox prefHeight="770.0" prefWidth="274.0">
+         <children>
+            <AnchorPane fx:id="side_ankerpane" prefHeight="800.0" prefWidth="258.0" styleClass="side_ankerpane" stylesheets="@style.css">
+               <children>
+                  <Pane fx:id="inner_pane" layoutX="6.0" layoutY="14.0" prefHeight="216.0" prefWidth="263.0" styleClass="inner_pane" stylesheets="@style.css">
+                     <children>
+                        <Pane fx:id="most_inner_pane" layoutX="67.0" layoutY="28.0" prefHeight="120.0" prefWidth="114.0" styleClass="most_inner_pane" stylesheets="@style.css">
+                           <children>
+                              <ImageView fitHeight="101.0" fitWidth="100.0" layoutX="7.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/avatar_1.png" />
+                                 </image></ImageView>
+                           </children>
+                        </Pane>
+                        <Label layoutX="82.0" layoutY="159.0" prefHeight="30.0" prefWidth="84.0" text="Username">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="btn_customer" layoutX="7.0" layoutY="275.0" onAction="#todashboard" prefHeight="59.0" prefWidth="263.0" styleClass="btn_customer11" stylesheets="@style.css" text="Customer">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_customer1" layoutX="7.0" layoutY="359.0" onAction="#Addcust" prefHeight="59.0" prefWidth="263.0" styleClass="btn_customer11" stylesheets="@style.css" text="Add Customer">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_customer11" layoutX="6.0" layoutY="674.0" onAction="#logout" prefHeight="59.0" prefWidth="263.0" styleClass="btn_customer11" stylesheets="@style.css" text="LOGOUT">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_customer12" layoutX="7.0" layoutY="438.0" onAction="#tocharges" prefHeight="59.0" prefWidth="263.0" styleClass="btn_customer11" stylesheets="@style.css" text="Charges">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_customer121" layoutX="6.0" layoutY="520.0" onAction="#toanalyses" prefHeight="59.0" prefWidth="263.0" styleClass="btn_customer11" stylesheets="@style.css" text="Analysis">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_complaint" layoutX="6.0" layoutY="593.0"  prefHeight="59.0" prefWidth="263.0" styleClass="btn_customer" stylesheets="@style.css" text="Complaints">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="770.0" prefWidth="1033.0" BorderPane.alignment="CENTER">
+    <children>
+       
+        <!-- Customer container pane -->
+        <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+            <content>
+                <AnchorPane fx:id="customerContainer" prefHeight="770.0" prefWidth="1033.0">
+                    <!-- Contents of customerContainer will be dynamically created -->
+                </AnchorPane>
+            </content>
+             <padding>
+                <Insets bottom="10" left="10" right="20" top="20" />
+            </padding>
+        </ScrollPane>
+    </children>
+</AnchorPane>
+
+   </center>
+</BorderPane>

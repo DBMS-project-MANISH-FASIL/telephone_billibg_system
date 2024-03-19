@@ -1,0 +1,103 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 06-Mar-2024, 1:56:25 pm
+    Author     : MANISH
+*/
+
+/*.root{
+    -fx-background-color:#EAEEF4;
+}*/
+
+.side_ankerpane{
+     -fx-background-color:#353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.inner_pane{
+    -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+    
+}
+.most_inner_pane{
+    -fx-background-color:#6780E2;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+}
+
+.btn_customer{
+     
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #141313;
+    -fx-text-fill: white; 
+    -fx-background-color: #333333;
+}
+.btn_customer11{
+    -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-border-style: solid;
+    -fx-border-color: #353A56;
+}
+.pane_1{
+    -fx-background-color:#748CF1;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+}
+.progress{
+     -fx-background-color:#ffffff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #ffffff;
+}
+.pane_11{
+      -fx-background-color:#ffffff;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #ffffff;
+}
+.pane_111{
+    -fx-background-color:#FD9999;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #FD9999;
+    
+}
+.pane_1111{
+     -fx-background-color:#353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 16px;
+    -fx-background-radius: 16px;
+     -fx-border-style: solid;
+    -fx-border-color: #353A56;
+}
+
+.bold-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Adjust color as needed */
+}

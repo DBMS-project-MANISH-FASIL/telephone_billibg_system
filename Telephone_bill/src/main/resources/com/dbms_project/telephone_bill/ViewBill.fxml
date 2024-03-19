@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dbms_project.telephone_bill.ViewBillController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   
+    <center>
+<AnchorPane prefHeight="814.0" prefWidth="1036.0" BorderPane.alignment="CENTER">
+    <children>
+        <GridPane hgap="10" layoutX="14.0" layoutY="21.0" prefHeight="786.0" prefWidth="1040.0" style="-fx-background-color: linear-gradient(to bottom right, #E6E6FA, #ADD8E6); -fx-padding: 20px; -fx-border-radius: 15px; -fx-alignment: center;" vgap="20">
+
+            <Label style="-fx-font-size: 28px; -fx-font-weight: bold;" text="Billing Details" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                  <GridPane.margin>
+                     <Insets left="200.0" />
+                  </GridPane.margin></Label>
+
+            <!-- Labels for billing details -->
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Total Local Call Duration (minutes):" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label fx:id="lblTotalLocalCallDuration" textOverrun="CLIP" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Total International Call Duration (minutes):" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Label fx:id="lblTotalInternationalCallDuration" textOverrun="CLIP"  style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="11" />
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Total Internet Usage (MB):" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Label fx:id="lblTotalInternetUsage" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Local Call Cost:" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Label fx:id="lblLocalCallCost" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="13" />
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="International Call Cost:" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Label fx:id="lblInternationalCallCost" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Internet Cost:" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Label fx:id="lblInternetCost" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="15" />
+
+            <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Total Bill Amount:" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <Label fx:id="lblTotalBillAmount" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-radius: 10px;" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+
+            <!-- Date pickers and buttons -->
+            <ComboBox fx:id="comboYear" promptText="Select Year" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets left="92.0" />
+                  </GridPane.margin></ComboBox>
+            <ComboBox fx:id="comboMonth" promptText="Select Month" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets left="237.0" />
+                  </GridPane.margin></ComboBox>
+            <JFXButton layoutX="657.0" layoutY="577.0" onAction="#ViewBill" prefHeight="43.0" prefWidth="187.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-background-color: #007bff; -fx-text-fill: white; -fx-background-radius: 10px;" text="View Bill" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                  <GridPane.margin>
+                     <Insets left="125.0" />
+                  </GridPane.margin></JFXButton>
+               <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Select Year And Month" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                  <GridPane.margin>
+                     <Insets left="100.0" />
+                  </GridPane.margin>
+               </Label>
+            <!-- Add more buttons or elements as needed -->
+
+            <!-- Define column and row constraints -->
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </children>
+</AnchorPane>
+
+
+
+   </center>
+</BorderPane>
